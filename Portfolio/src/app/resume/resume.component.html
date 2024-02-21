@@ -1,0 +1,90 @@
+<div class="container text-center">
+    <!-- Button to download PDF resume -->
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+   
+    <div class="pb-2">
+        <!-- Accordion component -->
+        <accordion [isAnimated]="true" class="shadow">
+            <!-- Accordion group for Education -->
+            <accordion-group [(isOpen)]="isEducationopen" heading="Education">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordian-heading>
+                    <!-- Hidden div to adjust alignment -->
+                    <div style="visibility: hidden;">></div>
+                    
+                    <!-- Text for Education section -->
+                    <div class="btn-link">Education</div>
+        
+                    <!-- Arrow icon to indicate open/close state -->
+                    <div style="width:10.95px;">
+                        <!-- Conditional display of arrow icon -->
+                        <div *ngIf="!isEducationopen" style="color:white;">></div>
+                        <div *ngIf="isEducationopen" style="color:white;">v</div>
+                    </div>
+                </button>
+        
+                <!-- Content for Education section -->
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Masters of Computer Application</h2>
+                    <h3 class="text-primary">Noida Institute of Engineering and Technology</h3>   
+                    <ul>
+                        <li>Masters completion year will be 2024</li>
+                        <li>Graduated with a 8.71CGPA</li>
+                    </ul>
+                </div>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Bachelor's of Science in Computer Application</h2>
+                    <h3 class="text-primary">CSJM University</h3>   
+                    <ul>
+                        <li>Graduated from Brahmanand PG College in July 2021</li>
+                        <li>Graduated with a 61.6%</li>
+                    </ul>
+                </div>
+            </accordion-group>
+            <!-- Accordion group for Certificates -->
+            <accordion-group heading="Certificates">
+                <ul>
+                    <li>Speak English Professionally(Georgia Institute of Technology) (02/2023 - 02/2023)</li>
+                    <li>Foundations: Data, Data, Everywhere(Google) (08/2023 - 08/2023)</li>
+                    <li>Ask Questions To Make Data-Driven Decisions(Google) (08/2023 - 08/2023)</li>
+                </ul>
+            </accordion-group>
+            <!-- Accordion group for Skills -->
+            <accordion-group heading="Skills">
+                <div class="row" style="text-align:left;">
+                    <div class="col">
+                        <h3>Programming Language:</h3>
+                        <ul>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Framework:</h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Web Development:</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Database:</h3>
+                        <ul>
+                            <li>MySql</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Technologies:</h3>
+                        <ul>
+                            <li>Natural language Processing(NLP)</li>
+                        </ul>
+                    </div>
+                </div>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>

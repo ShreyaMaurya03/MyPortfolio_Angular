@@ -1,0 +1,86 @@
+<section>
+    <div class="container">
+        <!-- Filter button -->
+        <div class="mb-2">
+            <div>
+                <!-- Button to toggle the filter section -->
+                <button class="btn btn-outline-primary mb-2 me-2" (click)="isCollapsed = !isCollapsed">Filter</button>
+                <button class="btn btn-outline-primary mb-2 " (click)="ResetFilters()" [hidden]="!filtering">Reset</button>
+            </div>
+        </div>
+
+        <!-- Filter section -->
+        <div [collapse]="isCollapsed" [isAnimated]="true">
+            <div class="border mb-2 shadow-sm" style="max-width:250px; ">
+                <form>
+                    <div class="row mx-0">
+                        <!-- Checkbox for selecting languages -->
+                        <div class="col">
+                            <small><b>Languages:</b></small>
+                            <div class="form-group">
+                                <div class="form-check">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)]="python"
+                                    (change)="Filter()"
+                                    name="Python">
+                                <label class="form-check-label small">Python</label>
+                                </div>
+                                <div class="form-check">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)]="html"
+                                    (change)="Filter()"
+                                    name="Html">                                 
+                                <label class="form-check-label small">HTML</label>
+                                </div>
+                                <div class="form-check">
+                                    <input
+                                        type="checkbox"
+                                        class="form-check-input position-static me-2"
+                                        [(ngModel)]="css"
+                                        (change)="Filter()"
+                                        name="css">                                 
+                                    <label class="form-check-label small">CSS</label>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- Checkbox for selecting frameworks -->
+                        <div class="col">
+                            <small><b>Framework:</b></small>
+                            <div class="form-check">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)]="flask"
+                                    (change)="Filter()"
+                                    name="flask">                                 
+                                <label class="form-check-label small">Flask</label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                    type="checkbox"
+                                    class="form-check-input position-static me-2"
+                                    [(ngModel)]="angular"
+                                    (change)="Filter()"
+                                    name="angular">                                 
+                                <label class="form-check-label small">Angular</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Project cards -->
+        <div class="row justify-content-center py-4">
+            <ng-container *ngFor="let project of projects">
+                <div class="col-lg col-md-6 mb-4" style="max-width: 380px; min-width: 380px;">
+                    <app-project-card [project]="project"></app-project-card>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>
