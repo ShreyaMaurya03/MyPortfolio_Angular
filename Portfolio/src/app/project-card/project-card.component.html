@@ -1,0 +1,11 @@
+<div class="card shadow text-center">
+    <div class="card-body">
+        <h5 class="card-title">{{ project.name }}</h5>
+        <p class="card-text">{{ project.summary }}</p>
+        <button class="btn btn-primary" (click)="openProjectModal()">View More</button>
+    </div>
+    <div class="card-footer">
+        <div class="d-flex flex-wrap justify-content-center">
+            <div *ngFor="let taq of project.taqs" class="btn btn-primary rounded-pill tag me-2 mb-1" [style.background-color]="taq.color">{{ taq }}</div>        </div>
+    </div>
+</div>
