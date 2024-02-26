@@ -1,27 +1,41 @@
-# Portfolio
+# Angular Portfolio Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
-## Development server
+# Introduction
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This Angular portfolio project is designed to display my proficiency in front-end web development using Angular. It includes various features and components to demonstrate my skills in building responsive, interactive, and visually appealing web applications.
 
-## Code scaffolding
+# Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Home Page: Introduces the portfolio and provides an overview of the projects included.
+- Project Showcase: Displays individual projects with descriptions, images, and links to live demos or GitHub repositories.
+- Contact Form: Allows visitors to get in touch with me via email.
 
-## Build
+# Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular
+- HTML5
+- CSS3
+- TypeScript
+- Bootstrap 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Installation
 
-## Running end-to-end tests
+To run this project locally, follow these steps:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Clone the repository: git clone https://github.com/yourusername/angular-portfolio.git
+- Navigate to the project directory: cd angular-portfolio
+- Install dependencies: npm install
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Usage
+
+After installing dependencies, you can run the project locally using the Angular CLI:
+
+ - ng serve
+
+Once the development server is up and running, open your web browser and navigate to http://localhost:4200 to view the portfolio.
+
+
