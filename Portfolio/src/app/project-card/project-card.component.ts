@@ -3,6 +3,7 @@ import { Project } from '../_models/Project';
 import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { ProjectModalComponent } from '../project-modal/project-modal.component';
 
+
 @Component({
   selector: 'app-project-card',
   templateUrl: './project-card.component.html',
