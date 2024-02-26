@@ -26,7 +26,7 @@ This Angular portfolio project is designed to display my proficiency in front-en
 To run this project locally, follow these steps:
 
 - Clone the repository: git clone (https://github.com/ShreyaMaurya03/MyPortfolio_Angular.git)
-- Navigate to the project directory: cd angular-portfolio
+- Navigate to the project directory: cd Portfolio
 - Install dependencies: npm install
 
 
